@@ -1,0 +1,19 @@
+/* Add application styles & imports to this file! */
+.avatar {
+    flex: 0 0 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    span {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0,0,0,.075);
+      border-radius: 50%;
+      font-size: 22px;
+      font-weight: 700;
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

@@ -1,0 +1,80 @@
+.container {
+  position: absolute;
+  font-size: 14px;
+  z-index: 99;
+  left: 100px;
+  top: 100px;
+  width: 27%;
+  .popUp {
+    color: #727272;
+    .header {
+      display: flex;
+      min-height: 70px;
+      border-bottom: 0.12rem solid #e0e0e0;
+      .avatar {
+        padding: 0 10px;
+      }
+      .header-name {
+        display: flex;
+        align-items: center;
+      }
+      .name {
+        white-space: break-spaces;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        p {
+          margin-bottom: 4px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        
+      }
+    }
+    .body {
+      height: 300px;
+      overflow: auto;
+      margin: 10px 4px 0px 35px;
+      font-size: 16px;
+      div, p {
+        margin-bottom: 10px;
+      }
+      div {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px;
+      }
+      
+    }
+    padding-bottom: 12px;
+    background: #fff;
+    right: -345px;
+    top: -5px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%),
+      0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #afafaf;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

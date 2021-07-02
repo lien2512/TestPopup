@@ -1,0 +1,24 @@
+<div class="container" [style.left]="styleLeft" [style.top]="styleTop">
+  <div class="popUp">
+    <div class="header">
+      <div nz-col nzFlex="60px" class="avatar">
+        <div>
+          <span>C</span>
+        </div>
+      </div>
+
+      <div class="name">
+        <div>
+          <p>{{data.code}}</p>
+          <span>05/03/3030</span>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div *ngFor="let item of data | keyvalue">
+        <p><b>{{item.key}}</b></p>
+        <span>{{item.value}}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.main-container {
+  width: 100%;
+  height: 400px;
+}
+.contain {
+  margin: 20px;
+  height: 400px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* position: absolute; */
+  left: 450px;
+    top: 130px;
+    table {
+      width: 1200px;
+
+    }
+}
+.dynamic-popup {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+thead {
+  text-transform: uppercase;
+}
+tbody tr td
+{
+
+ .item-name {
+  white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 550px;
+}
+}
+
+
+

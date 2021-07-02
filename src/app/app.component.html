@@ -1,0 +1,35 @@
+<div class="main-container">
+  <h3 style="padding: 20px;"> Data table demo</h3>
+  <div class="contain">
+    <table class="table table-hover">
+      <thead>
+        <tr style="background-color: #f5f5f5;">
+          <th id="item-avatar"></th>
+          <th style="width: 50%;" id="item-name">Engagement Name</th>
+          <th style="width: 15%;" id="item-code">Code</th>
+          <th style="width: 15%;" id="item-iar-date">IAR Date</th>
+          <th style="width: 15%;" id="item-ifa-date">AFA Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dat of basicTable">
+          <td id="item-avatar">
+            <div class="avatar">
+              <span>{{dat.name[0].toUpperCase()}}</span>
+            </div>
+          </td>
+          <td class="item-name">
+            <div class="name-content" class="skill" (mouseenter)="onSkillMouseEnter($event, dat)" style="height: 40px;">
+              <div class="item-name">{{dat.name}}</div>
+            </div>
+            <div popup class="dynamic-popup"></div>
+          </td>
+          <td id="item-code">{{dat.age}}</td>
+          <td id="item-iar-date">{{dat.address}}</td>
+          <td id="item-ifa-date">{{dat.address}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
